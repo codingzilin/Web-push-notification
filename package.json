@@ -1,0 +1,23 @@
+{
+  "name": "Web-push-notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingzilin/Web-push-notification.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingzilin/Web-push-notification/issues"
+  },
+  "homepage": "https://github.com/codingzilin/Web-push-notification#readme",
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
