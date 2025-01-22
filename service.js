@@ -21,6 +21,18 @@ const urlB64ToUint8Array = base64String => {
     return outputArray
 }
 
+const saveSubscription = async subscription => {
+    const SERVER_URL = 'http://localhost:4000/save-subscription'
+    const response = await fetch(SERVER_URL, {
+        method: 'post',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(subscription),
+    })
+    return response.json()
+}
+
 self.addEventListener('activate', async () => {
     try {
         const applicationServerKey = urlB64ToUint8Array(
